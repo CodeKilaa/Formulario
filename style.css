@@ -5,12 +5,12 @@ body{
     font-family: Arial, sans-serif;
     height: 100vh;
     margin: 0;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,26,80,1) 100%, rgba(0,212,255,1) 100%);
 }
-section {
-    background-color: #132839FF;
-    height: 35rem;
+section {  
+    height: 30rem;
     width: 35rem;
-    border: 2px solid #354455CC;
     border-radius: 10px;
     display: flex;
     justify-content: center; /* Centra el contenido horizontalmente */
@@ -47,12 +47,13 @@ form{
 }
 form h1{
     color: whitesmoke;
+    margin-bottom: 25px;
 }
 form div{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 label{
     color: whitesmoke;
@@ -60,25 +61,34 @@ label{
     margin-bottom: 6px;
 }
 input {
-    padding: 10px; 
+    padding: 15px; 
     border: 1px solid #354455CC; 
     border-radius: 5px;
     background-color: #1f2937; 
     color: white; 
 }
+input:focus {
+    outline: none;
+    border: 2px solid #0573ce;
+}
 button {  
-    padding: 10px 20px;
+    padding: 10px 40px;
     border: none;
     border-radius: 5px;
     background-color: #0573ce; 
     color: white; 
     cursor: pointer;
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: #0b47ca;
 }
 p{
-    color: gray;
+    color: gray;  
 }
 p a{
     color: #3B82F6;
+    text-decoration: none;
 }
 @media (max-width: 768px) {
     section {
